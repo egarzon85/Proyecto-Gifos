@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <!-- GOOGLE FONTS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/e46deb082b.js" crossorigin="anonymous"></script>
+  <title>Proyecto 2 - gifOS</title>
+</head>
+
+<body id="cuerpo" class="cuerpo">
+  <div class="linea-nav"></div>
+  <header id="header" class="header">
+    <a href="index.html"><img src="assets/logo-mobile.svg" alt="Logo" class="logo" id="logo" /></a>
+    <div class="burguer" id="btn-menu">
+      <i class="fas fa-bars burguer" id="brgr"></i>
+    </div>
+    <div class="search" id="nav-search">
+      <input type="text" name="buscador" id="input-srch-top" placeholder="Busca GIFOS y más" />
+      <span id="srch-drk-top">
+        <i class="fas fa-search" id="srch-drk-top-faw"></i>
+      </span>
+    </div>
+    <nav id="lista" class="disable-menu">
+      <ul>
+        <li><a href="#" id="mode-dark">Modo Nocturno</a></li>
+        <li class="line-white"></li>
+        <li><a href="favoritos.html" id="favoritos">Favoritos</a></li>
+        <li class="line-white"></li>
+        <li><a href="misgifos.html" id="mis-gifos">Mis GIFOS</a></li>
+        <li id="li-agregar-gif">
+          <a href="grabacion.html">
+              <span id="agregar-gif" class="agregar-gif">
+                <i class="fas fa-plus add-gif"></i>
+              </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="main">
+    <section id="home" class="home">
+      <img src="assets/icon-mis-gifos.svg" alt="Icono mis gifos" id="icon-misgifos" class="icon-misgifos" />
+      <h2 id="title-misgifos" class="title-misgifos">Mis GIFOS</h2>
+      <img src="assets/icon-mis-gifos-sin-contenido.svg" alt="Icono mis gifos sin contenido" id="misgif-sincontenido"
+        class="icon-misgifos" />
+      <h3 id="text-mg-sc">¡Anímate a crear tu primer GIFO!</h3>
+      <div id="grid-srch" class="grid-srch"></div>
+      <h4 id="ver-mas-fav" class="ver-mas">VER MÁS</h4>
+    </section>
+
+    <section id="gifosmax" class="gifosmax">
+      <span id="close-btn">
+        <i class="fas fa-times"></i>
+      </span>
+      <img src="assets/loading.png" alt="Gifos-Max" id="imgmax" class="imgmax" />
+      <div id="foot-gifosmax" class="foot-gifosmax">
+        <p id="usermax" class="usermax">Usuario</p>
+        <div id="favmax-box" class="favmax-box">
+          <span id="favmax" class="favmax">
+            <i class="far fa-heart" id="botonFavorito"></i>
+          </span>
+        </div>
+        <div id="downmax-box" class="downmax-box">
+          <span id="downmax" class="downmax">
+            <i class="fas fa-download"></i>
+          </span>
+        </div>
+        <h4 id="titlemax" class="titlemax">Titulo</h4>
+      </div>
+    </section>
+
+    <section class="trending-section">
+      <div class="trending-text">
+        <h2>Trending GIFOS</h2>
+        <p>Mirá los últimos GIFOS de nuestra comunidad.</p>
+      </div>
+      <div class="trending-dsktp">
+        <span id="scroll-left" class="scroll-trending">
+          <i class="fas fa-chevron-left"></i>
+        </span>
+        <div class="trndng-view" id="trndng-view"></div>
+        <span id="scroll-right" class="scroll-trending">
+          <i class="fas fa-chevron-right"></i>
+        </span>
+      </div>
+    </section>
+  </main>
+
+
+    <footer class="footer">
+      <ul class="footer-container-flex">
+        <li>
+          <P class="share">Compartir en:</P>
+        </li>
+        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f" title="Facebook"></i></a></li>
+        <li><a href="https://twitter.com/"><i class="fab fa-twitter" title="Twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram" title="Instagram"></i></a></li>
+      </ul>
+      <p class="copyright">©️GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/hamburgerMenu.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/mainGifos.js"></script>
+    <script src="js/gifmax.js"></script>
+
+</body>
+
+</html>

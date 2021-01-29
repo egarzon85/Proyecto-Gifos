@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <!-- GOOGLE FONTS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/e46deb082b.js" crossorigin="anonymous"></script>
+  <title>Proyecto 2 - gifOS</title>
+  <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+</head>
+
+<body id="cuerpo" class="cuerpo">
+  <div class="linea-nav"></div>
+  <header id="header" class="header">
+    <a href="index.html"><img src="assets/logo-mobile.svg" alt="Logo" class="logo" id="logo" /></a>
+    <div class="burguer" id="btn-menu">
+      <i class="fas fa-bars burguer" id="brgr"></i>
+    </div>
+    <div class="search" id="nav-search">
+      <input type="text" name="buscador" id="input-srch-top" placeholder="Busca GIFOS y más" />
+      <span id="srch-drk-top">
+        <i class="fas fa-search" id="srch-drk-top-faw"></i>
+      </span>
+    </div>
+    <nav id="lista" class="disable-menu">
+      <ul>
+        <li><a href="#" id="mode-dark">Modo Nocturno</a></li>
+        <li class="line-white"></li>
+        <li><a href="favoritos.html" id="favoritos">Favoritos</a></li>
+        <li class="line-white"></li>
+        <li><a href="misgifos.html" id="mis-gifos">Mis GIFOS</a></li>
+        <li id="li-agregar-gif">
+          <a href="grabacion.html">
+              <span id="agregar-gif" class="agregar-gif">
+                <i class="fas fa-plus add-gif"></i>
+              </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section id="grabargif" class="grabargif">
+      <div id="camara-completa" class="camara-completa">
+        <img src="assets/camara.svg" alt="Camara" id="camara" />
+        <img src="assets/element-luz-camara.svg" id="luz-camara" alt="Luz camara" />
+      </div>
+      <div id="zonaGrabacion" class="zonaGrabacion">
+        <div id="grabacion" class="grabacion">
+          <div id="sup-izq"></div>
+          <div id="sup-der"></div>
+          <div id="centrograbacion">
+            <p id="instructivo">Aquí podrás<br />crear tus propios <span id="gifos-celeste">GIFOS</span></p>
+            <p id="detalle">¡Crea tu GIFO en sólo 3 pasos!<br />(sólo necesitas una cámara para grabar un video)</p>
+          </div>
+          <div id="inf-izq"></div>
+          <div id="inf-der"></div>
+        </div>
+        <div id="pasos">
+          <h5 id="paso1" class="pasos">1</h5>
+          <h5 id="paso2" class="pasos">2</h5>
+          <h5 id="paso3" class="pasos">3</h5>
+        </div>
+      </div>
+      <div class="pelicula">
+        <img src="assets/pelicula.svg" id="pelicula" alt="Pelicula" />
+      </div>
+      <div id="foot" class="foot">
+        <div id="division" class="division"></div>
+        <h4 id="comenzar" class="comenzar">COMENZAR</h4>
+      </div>
+    </section>
+  </main>
+
+
+    <footer class="footer">
+      <ul class="footer-container-flex">
+        <li>
+          <P class="share">Compartir en:</P>
+        </li>
+        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f" title="Facebook"></i></a></li>
+        <li><a href="https://twitter.com/"><i class="fab fa-twitter" title="Twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram" title="Instagram"></i></a></li>
+      </ul>
+      <p class="copyright">©️GIFOS 2020 All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/hamburgerMenu.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/record.js"></script>
+</body>
+
+</html>
