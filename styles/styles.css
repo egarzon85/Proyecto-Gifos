@@ -1551,9 +1551,13 @@ h1 {
   color: #572ee5;
   position: relative; }
   .buttonsGif .buttonLink {
-    margin-right: 10px; }
+    margin-left: -30px; }
+    .buttonsGif .buttonLink:hover {
+      background-image: url("/assets/icon-link-hover.svg"); }
   .buttonsGif .buttonDown {
-    margin-right: 10px; }
+    margin-left: -70px; }
+    .buttonsGif .buttonDown:hover {
+      background-image: url("/assets/icon-download-hover.svg"); }
 
 .cuerpo-dark {
   margin-top: 0px;

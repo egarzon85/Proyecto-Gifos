@@ -157,8 +157,8 @@ function stopRecording() {
         subiendoGifo.textContent = "GIFO subido con éxito";
         let buttonsGif = document.createElement('div');
 			  buttonsGif.classList.add('buttonsGif');
-        buttonsGif.innerHTML = `<div onclick="downloadCreatedGif('${myGifoId}')"><i class="fas fa-download buttonDown"></i></div>
-        <div onclick="copyUrl('https://giphy.com/gifs/${myGifoId}')"><i class="fas fa-link buttonLink"></i></div>`
+        buttonsGif.innerHTML = `<div onclick="downloadCreatedGif('${myGifoId}')"><img class="buttonDown" src="./assets/icon-download.svg"></div>
+        <div onclick="copyUrl('https://giphy.com/gifs/${myGifoId}')"><img class="buttonLink" src="./assets/icon-link-normal.svg"></div>`
         document.getElementById("sup-der").appendChild(buttonsGif);
         let otroGif = document.createElement("h4");
         document.getElementById("foot").appendChild(otroGif);
