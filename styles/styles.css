@@ -1420,7 +1420,7 @@ h1 {
           width: 100%;
           height: 100%;
           position: relative;
-          top: -347px; }
+          top: -378px; }
       .grabargif .zonaGrabacion .grabacion #sup-izq {
         border-top: 1px solid #50e3c2;
         border-left: 1px solid #50e3c2;
@@ -1549,15 +1549,18 @@ h1 {
       -ms-flex-direction: row;
           flex-direction: row;
   color: #572ee5;
-  position: relative; }
+  position: relative;
+  z-index: 2; }
   .buttonsGif .buttonLink {
-    margin-left: -30px; }
+    margin-left: -35px;
+    margin-top: 30px; }
     .buttonsGif .buttonLink:hover {
-      background-image: url("/assets/icon-link-hover.svg"); }
+      background-image: url("./assets/icon-link-hover.svg"); }
   .buttonsGif .buttonDown {
-    margin-left: -70px; }
+    margin-left: -75px;
+    margin-top: 30px; }
     .buttonsGif .buttonDown:hover {
-      background-image: url("/assets/icon-download-hover.svg"); }
+      background-image: url("./assets/icon-download-hover.svg"); }
 
 .cuerpo-dark {
   margin-top: 0px;
