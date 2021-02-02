@@ -1540,6 +1540,21 @@ h1 {
     .trending-tag .trending-item:last-child::after {
       content: ' '; }
 
+.buttonsGif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #572ee5;
+  position: relative; }
+  .buttonsGif .buttonLink {
+    margin-right: 10px; }
+  .buttonsGif .buttonDown {
+    margin-right: 10px; }
+
 .cuerpo-dark {
   margin-top: 0px;
   background-color: #37383C;

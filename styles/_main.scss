@@ -1413,6 +1413,19 @@ h1 {
 	}
 }
 
+.buttonsGif {
+  display: flex;
+  flex-direction: row;
+  color: #572ee5;
+  position: relative;
+  .buttonLink{
+    margin-right: 10px;
+  }
+  .buttonDown{
+    margin-right: 10px;
+  }
+}
+
 
 
 

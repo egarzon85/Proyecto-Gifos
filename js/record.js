@@ -151,9 +151,15 @@ function stopRecording() {
       .then(json => {
         console.log(json.data);
         arregloMisGifos.push(json.data.id);
+        let myGifoId = json.data.id
         localStorage.setItem("misGifos", JSON.stringify(arregloMisGifos));
         loader.src = "assets/check.svg";
         subiendoGifo.textContent = "GIFO subido con éxito";
+        let buttonsGif = document.createElement('div');
+			  buttonsGif.classList.add('buttonsGif');
+        buttonsGif.innerHTML = `<div onclick="downloadCreatedGif('${myGifoId}')"><i class="fas fa-download buttonDown"></i></div>
+        <div onclick="copyUrl('https://giphy.com/gifs/${myGifoId}')"><i class="fas fa-link buttonLink"></i></div>`
+        document.getElementById("sup-der").appendChild(buttonsGif);
         let otroGif = document.createElement("h4");
         document.getElementById("foot").appendChild(otroGif);
         otroGif.setAttribute("id", "otroGif");
@@ -161,6 +167,7 @@ function stopRecording() {
         otroGif.textContent = "Quieres cargar otro Gif?";
         otroGif.style.width = "250px";
         document.getElementById("otroGif").addEventListener("click", function () {
+          buttonsGif.style.display = "none";
           document.getElementById("otroGif").remove();
           document.getElementById("imgGif").remove();
           document.getElementById("loader").remove();
@@ -219,3 +226,21 @@ function misGifos() {
       .catch(err => console.log(err));
   }
 }
+
+const downloadCreatedGif = async (myGifId) => {
+	let blob = await fetch(
+		`https://media.giphy.com/media/${myGifId}/giphy.gif`
+	).then((img) => img.blob());
+	invokeSaveAsDialog(blob, 'My-Gif.gif');
+};
+
+
+const copyUrl = async(myGifId) => {
+  const aux = document.createElement("input");
+  aux.setAttribute("value", myGifId);
+  document.body.appendChild(aux);
+  aux.select();
+  document.execCommand("copy");
+  document.body.removeChild(aux);
+  alert("Link copiado al portapapeles")
+};
