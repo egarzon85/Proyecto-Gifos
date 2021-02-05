@@ -1554,13 +1554,10 @@ h1 {
   .buttonsGif .buttonLink {
     margin-left: -35px;
     margin-top: 30px; }
-    .buttonsGif .buttonLink:hover {
-      background-image: url("./assets/icon-link-hover.svg"); }
-  .buttonsGif .buttonDown {
-    margin-left: -75px;
-    margin-top: 30px; }
-    .buttonsGif .buttonDown:hover {
-      background-image: url("./assets/icon-download-hover.svg"); }
+
+.buttonDown {
+  margin-left: -75px;
+  margin-top: 30px; }
 
 .cuerpo-dark {
   margin-top: 0px;
