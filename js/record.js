@@ -144,7 +144,7 @@ function stopRecording() {
     let hoverCard = document.createElement("div");
     hoverCard.setAttribute("id", "hoverCard");
     document.getElementById("centrograbacion").appendChild(hoverCard);
-    fetch(`https://upload.giphy.com/v1/gifs?api_key=${apiKey}`, { method: "POST", body: form })
+    fetch(`https://upload.giphy.com/v1/gifs?api_key=${apiKey}`, { method: "POST", mode: 'cors', body: form })
       .then(respuesta => {
         return respuesta.json();
       })
